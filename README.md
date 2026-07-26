@@ -193,6 +193,10 @@ Expect `"backend":"actian"` and `"recall_ok":true`.
 4. **Full-Precision ONNX Embedder** — High-precision fp32 ONNX model deployment guaranteeing 100% embedding parity across devices and Actian VectorAI DB server.
 
 ---
+## FLOWCHART ## : 
+<img width="1122" height="788" alt="WhatsApp Image 2026-07-26 at 12 03 36 PM" src="https://github.com/user-attachments/assets/c41ed082-cc33-4c44-a7ef-2a6f76210787" />
+<img width="1120" height="782" alt="WhatsApp Image 2026-07-26 at 12 03 48 PM" src="https://github.com/user-attachments/assets/2c07c01b-0b50-4164-980a-7077426abcba" />
+<img width="1120" height="787" alt="WhatsApp Image 2026-07-26 at 12 04 12 PM" src="https://github.com/user-attachments/assets/43c48b30-b6f8-4804-a987-8fbcc4d8def4" />
 
 ## License
 
