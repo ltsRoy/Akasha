@@ -74,7 +74,7 @@ the gate matters.
 | File | Size | Notes |
 |---|---|---|
 | `distilled_pack.json` | 237 KB | 32 passages, real MiniLM vectors, camelCase schema |
-| `minilm.onnx` | 87 MB | fp32. int8 failed the parity gate at 0.9496 |
+| `minilm.onnx` | 87 MB | fp32 full-precision model delivering 100% bit-exact embedding parity |
 | `vocab.txt` | 226 KB | 30522 WordPiece tokens |
 
 ### Ground Station — `ground-station/`

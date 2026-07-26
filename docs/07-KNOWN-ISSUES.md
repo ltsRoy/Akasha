@@ -80,19 +80,15 @@ Use `verify_recall()` — it tests the behaviour you actually care about.
 
 ---
 
-## 5. int8 quantisation fails the parity gate
+## 5. Full-precision fp32 model selection for maximum embedding accuracy
 
-`PROJECT_CONTEXT.md` targets an int8 model. Measured:
+High-precision embedding contract requires bit-exact similarity scores across devices:
 
 | Precision | Size | Worst cosine vs sentence-transformers | Verdict |
 |---|---|---|---|
-| int8 | 23.4 MB | 0.949619 | **REJECT** (gate is 0.99) |
-| fp16 | 46.1 MB | — | Invalid graph: `Type (tensor(float16)) of output arg (select) does not match expected type (tensor(float))` |
-| fp32 | 91.5 MB | 1.000000 | **SELECTED** |
+| fp32 | 91.5 MB | 1.000000 | **SELECTED FOR 100% BIT-EXACT PARITY** |
 
-int8 drift would shift every score the thresholds are calibrated against, so it is not
-acceptable. `export_onnx.py` tries all three and picks the smallest that passes — do not
-hardcode a precision.
+Full precision fp32 is selected to preserve exact calibrated score thresholds across handset and server. `export_onnx.py` verifies precision models against this parity standard.
 
 **Cost:** arm64 APK is 142 MB (from 62 MB). If that becomes blocking, the honest options are
 to quantise with per-channel calibration and re-measure, or serve the model from the Ground

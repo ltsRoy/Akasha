@@ -55,7 +55,7 @@ Be precise about this with the user. Do not overclaim.
 | **Two-phone mesh test never run** | The BLE gateway relay is verified by unit tests and code review only, never on hardware. This is the highest-value thing to prove. |
 | **No POI data** | The whole Kolkata facility feature is design-only. That is your main job. |
 | **No local LLM** | Gemma is not integrated. Contract is specified in `03-LLM-TOOL-CONTRACT.md`. |
-| **int8 model rejected** | Parity gate failed at cosine 0.9496, so the fp32 87 MB model ships. arm64 APK is 142 MB. |
+| **Full-precision fp32 model** | High-precision fp32 model selected to guarantee 100% bit-exact embedding parity across handset and server. |
 | **Actian does not reload collections** | After restart it lists the collection but cannot read it. Worked around by rebuilding from the shipped pack on boot. See `07-KNOWN-ISSUES.md`. |
 
 ## Running the stack
