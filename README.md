@@ -11,15 +11,15 @@
 
 ## Three-Tier Architecture
 
-Akasha provides continuous operation through a robust three-tier fallback architecture:
+Akasha provides continuous operation through a robust three-tier fallback architecture that **operates 100% offline without requiring any internet connection**:
 
 | Tier | Condition | Capability |
 |---|---|---|
-| **LOCAL** | Handset offline mode | On-device knowledge pack + embedded LLM |
-| **MESH** | Peer devices nearby | BLE mesh relay, shared knowledge, store-and-forward chat |
-| **FULL** | Connected to Ground Station | Full vector database, POI/facility search, 53+ locations |
+| **LOCAL** | Handset offline mode | On-device knowledge pack + embedded LLM (100% offline) |
+| **MESH** | Peer devices nearby | BLE mesh relay, shared knowledge, store-and-forward chat (100% offline) |
+| **FULL** | Connected to Ground Station | Full vector database, POI/facility search, 53+ locations (Local LAN, 100% offline) |
 
-The application dynamically detects connectivity and seamlessly switches between tiers while displaying active status.
+The application operates seamlessly in complete internet blackouts, automatically detecting connectivity tiers and displaying active status.
 
 ---
 

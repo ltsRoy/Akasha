@@ -38,10 +38,10 @@ The application follows a clean architecture pattern, heavily modularized by fea
 
 ## 3. Key Components
 
-### Three-Tier Knowledge System
-1. **LOCAL** — On-device knowledge pack + embedded LLM (works offline)
-2. **MESH** — BLE relay queries through nearby phones
-3. **FULL** — Ground Station with Actian VectorAI DB
+### Three-Tier Knowledge System (100% Offline Capable)
+1. **LOCAL** — On-device knowledge pack + embedded LLM (100% offline on single device)
+2. **MESH** — BLE peer-to-peer relay queries across nearby phones (100% offline via Bluetooth LE)
+3. **FULL** — Ground Station laptop over local Wi-Fi with Actian VectorAI DB (100% offline via LAN)
 
 ### Refusal Gate
 The semantic retrieval system has a hard threshold (0.45). Off-topic queries are refused, and the LLM is *never invoked* for unvetted content. This is a critical safety invariant — do not bypass it.
