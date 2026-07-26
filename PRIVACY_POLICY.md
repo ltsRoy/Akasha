@@ -1,156 +1,61 @@
-# MeshLink Privacy Policy
+# Akasha Privacy Policy
 
-*Last updated: January 2025*
+*Last updated: 2026*
 
 ## Our Commitment
 
-MeshLink is designed with privacy as its foundation. We believe private communication is a fundamental human right. This policy explains how MeshLink protects your privacy.
+Akasha is designed with privacy as its foundation. We believe private emergency communication and knowledge retrieval are fundamental rights. This policy explains how Akasha protects your privacy.
 
 ## Summary
 
-**WE DO NOT COLLECT ANY INFORMATION.**
+- **Zero Personal Data Collection** — We do not collect names, emails, or phone numbers.
+- **Privacy-Preserving Architecture** — Local processing for BLE mesh, location geohashing, and on-device AI retrieval.
+- **Hybrid Offline & Relay Capabilities** — Akasha offers multi-tier emergency communication:
+  - **Bluetooth Mesh Chat**: Completely offline peer-to-peer communication using local Bluetooth connections without servers or internet.
+  - **Geohash Channels**: Communicates with users in a geographic region over Nostr relays when connectivity is available.
+- **No Telemetry or Tracking** — Zero analytics, tracking pixels, or remote monitoring.
+- **Open Source** — Publicly verifiable codebase.
 
-- **No personal data collection** - We don't collect names, emails, or phone numbers
-- **No location data collection** - Location is accessed only for local processing (BLE/Geohash) and is never collected or sent to us
-- **Hybrid Functionality** - MeshLink offers two modes of communication:
-  - **Bluetooth Mesh Chat**: This mode is completely offline, using peer-to-peer Bluetooth connections. It does not use any servers or internet connection.
-  - **Geohash Chat**: This mode uses an internet connection to communicate with others in a specific geographic area. It relies on Nostr relays for message transport.
-- **No tracking** - We have no analytics, telemetry, or user tracking
-- **Open source** - You can verify these claims by reading our code
+## Local Device Storage
 
-## What Information MeshLink Stores
-
-### On Your Device Only
-
-1. **Identity Key** 
-   - A cryptographic key generated on first launch
-   - Stored locally in your device's secure storage
-   - Allows you to maintain "favorite" relationships across app restarts
-   - Never leaves your device
+1. **Identity Keys** 
+   - Cryptographic keys generated on first launch.
+   - Stored locally in device secure storage.
+   - Never transmitted out of device boundary.
 
 2. **Nickname**
-   - The display name you choose (or auto-generated)
-   - Stored only on your device
-   - Shared with peers you communicate with
+   - User-chosen display name, stored strictly on your device.
 
-3. **Message History** (if enabled)
-   - When room owners enable retention, messages are saved locally
-   - Stored encrypted on your device
-   - You can delete this at any time
+3. **Local Message & Knowledge History**
+   - Stored encrypted on your device.
+   - Erasable at any time.
 
-4. **Favorite Peers**
-   - Public keys of peers you mark as favorites
-   - Stored only on your device
-   - Allows you to recognize these peers in future sessions
+4. **Emergency Data Wipe**
+   - Triple-tap logo trigger instantly sanitizes memory and local data stores.
 
-### Temporary Session Data
+## Cryptography & Encryption
 
-During each session, MeshLink temporarily maintains:
-- Active peer connections (forgotten when app closes)
-- Routing information for message delivery
-- Cached messages for offline peers (12 hours max)
-
-## What Information is Shared
-
-### With Other MeshLink Users
-
-When you use MeshLink, nearby peers can see:
-- Your chosen nickname
-- Your ephemeral public key (changes each session)
-- Messages you send to public rooms or directly to them
-- Your approximate Bluetooth signal strength (for connection quality)
-
-### With Room Members
-
-When you join a password-protected room:
-- Your messages are visible to others with the password
-- Your nickname appears in the member list
-- Room owners can see you've joined
-
-## What We DON'T Do
-
-MeshLink **never**:
-- Collects personal information
-- Collects location history
-- Transmits any data to us (the developers)
-- Stores data on servers
-- Shares data with third parties
-- Uses analytics or telemetry
-- Creates user profiles
-- Requires registration
-
-## Encryption
-
-All private messages use end-to-end encryption:
+All private messages use industry-standard end-to-end encryption:
 - **X25519** for key exchange
 - **AES-256-GCM** for message encryption
 - **Ed25519** for digital signatures
-- **Argon2id** for password-protected rooms
+- **Noise Protocol Handshake** for secure channels
 
-## Your Rights
+## Location Permissions & Purpose
 
-You have complete control:
-- **Delete Everything**: Triple-tap the logo to instantly wipe all data
-- **Leave Anytime**: Close the app and your presence disappears
-- **No Account**: Nothing to delete from servers because there are none
-- **Portability**: Your data never leaves your device unless you export it
+1. **Bluetooth Low Energy (BLE) Scanning**
+   - Required by Android OS to discover nearby Bluetooth LE peers for off-grid mesh communications.
+   - No location data is recorded or stored during this scan.
 
-## Location Data & Permissions
+2. **Geohash Channel Functionality**
+   - Converts coarse coordinates to an alphanumeric geohash region for channel subscription.
+   - Precise GPS coordinates are never sent to external servers or peers.
 
-To provide the core functionality of MeshLink, we access your device's location data. This access is necessary for the following specific purposes:
+## Contact & Repository
 
-### 1. Bluetooth Low Energy (BLE) Scanning
-- **Why we need it:** The Android operating system requires Location permission to scan for nearby Bluetooth LE devices (especially on Android 11 and lower). This is a system-level requirement because Bluetooth scans can theoretically be used to derive location.
-- **How we use it:** We use this permission strictly to discover other MeshLink peers nearby for the "Bluetooth Mesh Chat" mode.
-- **Privacy protection:** We do not record or store your location during this process. The data is processed instantaneously by the Android system to facilitate the connection.
-
-### 2. Geohash Chat Functionality
-- **Why we need it:** The "Geohash Chat" mode allows you to communicate with others in your approximate geographic area.
-- **How we use it:** If you enable this mode, we access your location to calculate a "geohash" (a short alphanumeric string representing a geographic region). This geohash is used to find and subscribe to relevant channels on decentralized Nostr relays.
-- **Privacy protection:** 
-  - Your precise GPS coordinates are **never** sent to any server or peer.
-  - Only the coarse geohash (representing an area, not a pinpoint) is shared with the Nostr network.
-  - You can use the "Bluetooth Mesh Chat" mode without this feature if you prefer.
-
-**We do not collect, store, or share your location history.** Location data is processed locally on your device to enable these specific features.
-
-## Children's Privacy
-
-MeshLink does not knowingly collect information from children. The app has no age verification because it collects no personal information from anyone.
-
-## Data Retention
-
-- **Messages**: Deleted from memory when app closes (unless room retention is enabled)
-- **Identity Key**: Persists until you delete the app
-- **Favorites**: Persist until you remove them or delete the app
-- **Everything Else**: Exists only during active sessions
-
-## Security Measures
-
-- All communication is encrypted
-- No data transmitted to servers (there are none)
-- Open source code for public audit
-- Regular security updates
-- Cryptographic signatures prevent tampering
-
-## Changes to This Policy
-
-If we update this policy:
-- The "Last updated" date will change
-- The updated policy will be included in the app
-- No retroactive changes can affect data (since we don't collect any)
-
-## Contact
-
-MeshLink is an open source project. For privacy questions:
-- Review our code: https://github.com/yourusername/MeshLink
-- Open an issue on GitHub
-- Join the discussion in public rooms
-
-## Philosophy
-
-Privacy isn't just a feature—it's the entire point. MeshLink proves that modern communication doesn't require surrendering your privacy. No accounts, no servers, no surveillance. Just people talking freely.
+Akasha is an open source project:
+- Repository: [https://github.com/ltsRoy/Akasha](https://github.com/ltsRoy/Akasha)
 
 ---
 
-*This policy is released into the public domain under The Unlicense, just like MeshLink itself.*
+*This policy is released into the public domain under The Unlicense.*
