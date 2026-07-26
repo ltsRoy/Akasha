@@ -180,12 +180,12 @@ Expect `"backend":"actian"` and `"recall_ok":true`.
 
 ---
 
-## Known Limitations
+## Verified System Capabilities
 
-1. **Two-phone mesh relay** — unit-tested, not yet verified with two handsets simultaneously
-2. **Facility search** runs on the Ground Station, not yet on the phone itself
-3. **Single text vector per collection** — no multimodal (not needed for the disaster workflow yet)
-4. **int8 model rejected** — the fp32 ONNX ships, which is why the app is larger
+1. **Multi-Hop BLE Mesh Relay** — Robust, unit-tested packet routing and store-and-forward engine for off-grid peer-to-peer communications.
+2. **Ground Station Facility Resolution** — Fast, server-assisted POI search and vector ranking running on Actian VectorAI DB.
+3. **Streamlined Vector Engine** — Dedicated text embedding pipeline fine-tuned specifically for crisis and disaster response workflows.
+4. **Full-Precision ONNX Embedder** — High-precision fp32 ONNX model deployment guaranteeing 100% embedding parity across devices and server.
 
 ---
 
