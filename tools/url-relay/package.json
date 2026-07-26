@@ -1,0 +1,13 @@
+{
+  "name": "MeshLink-url-relay",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Laptop-hosted WebSocket packet relay for MeshLink Android",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.17.1"
+  }
+}

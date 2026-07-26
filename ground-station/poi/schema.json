@@ -1,0 +1,87 @@
+{
+  "title": "AKASHA Emergency Facility (POI) record",
+  "description": "JSON Schema (draft 2020-12) for one emergency facility. Validated before ingest; see docs/akasha/02-POI-DATA-MODEL.md",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id", "name", "category", "latitude", "longitude",
+      "geohash4", "geohash5", "operator", "source_doc",
+      "data_status", "pack_version", "lang"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^poi:[a-z0-9_]+:[a-z_]+:[a-z0-9_-]+$",
+        "description": "poi:<city>:<category>:<slug>"
+      },
+      "name": { "type": "string", "minLength": 2, "maxLength": 120 },
+      "name_local": { "type": ["string", "null"], "maxLength": 160 },
+      "category": {
+        "type": "string",
+        "enum": [
+          "hospital", "clinic", "blood_bank", "pharmacy", "police",
+          "fire_station", "shelter", "rescue_centre",
+          "relief_distribution", "helpline"
+        ]
+      },
+      "specialties": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "orthopaedic", "trauma", "burns", "cardiac", "neuro",
+            "paediatric", "maternity", "general_surgery", "general_medicine",
+            "dialysis", "poison_control", "snake_antivenom", "psychiatric",
+            "ophthalmology", "icu", "blood_transfusion"
+          ]
+        }
+      },
+      "latitude": {
+        "type": "number",
+        "minimum": 22.35,
+        "maximum": 22.80,
+        "description": "Kolkata bounding box. Deliberately tight so transposed lat/lon fails validation."
+      },
+      "longitude": {
+        "type": "number",
+        "minimum": 88.15,
+        "maximum": 88.60,
+        "description": "Kolkata bounding box."
+      },
+      "geohash4": { "type": "string", "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]{4}$" },
+      "geohash5": { "type": "string", "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]{5}$" },
+      "address": { "type": ["string", "null"], "maxLength": 240 },
+      "ward": { "type": ["string", "null"] },
+      "phone": {
+        "type": ["string", "null"],
+        "pattern": "^[0-9+][0-9 +-]{2,19}$",
+        "description": "MUST be null unless data_status is verified. Enforced by test_poi_data.py, not by schema."
+      },
+      "alt_phone": { "type": ["string", "null"], "pattern": "^[0-9+][0-9 +-]{2,19}$" },
+      "emergency_24h": { "type": "boolean" },
+      "capacity_beds": { "type": ["integer", "null"], "minimum": 0 },
+      "has_emergency_dept": { "type": ["boolean", "null"] },
+      "wheelchair_accessible": { "type": ["boolean", "null"] },
+      "operator": {
+        "type": "string",
+        "enum": ["government", "private", "ngo", "military", "unknown"]
+      },
+      "source_doc": { "type": "string", "minLength": 3 },
+      "source_url": { "type": ["string", "null"] },
+      "verified_on": {
+        "type": ["string", "null"],
+        "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+      },
+      "data_status": {
+        "type": "string",
+        "enum": ["verified", "unverified", "stale", "disputed"]
+      },
+      "pack_version": { "type": "string", "pattern": "^[a-z0-9]+-[0-9]+[.][0-9]+[.][0-9]+$" },
+      "lang": { "type": "string", "enum": ["en", "bn", "hi"] },
+      "notes": { "type": ["string", "null"], "maxLength": 400 }
+    }
+  }
+}

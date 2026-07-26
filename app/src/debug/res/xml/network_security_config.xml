@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DEBUG-ONLY override. The release config in src/main keeps cleartext disabled.
+
+  Why this has to be blanket rather than scoped: the Ground Station's address is discovered at
+  runtime by sweeping the local subnet, so it isn't known at build time. Android's
+  <domain> elements accept literal hostnames or IPs only — CIDR ranges like 192.168.0.0/16 are
+  not valid there and are silently ignored, which is exactly why the earlier scoped attempt kept
+  failing with "CLEARTEXT communication not permitted" even though the sweep had found the server.
+
+  Living in src/debug means release builds cannot inherit it. Shipping this app for real needs the
+  station served over HTTPS, or a user-entered address pinned as a single <domain>.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -1,0 +1,102 @@
+# ============================================================
+# Akasha — .gitignore
+# ============================================================
+
+# ---------- Android Studio / IntelliJ ----------
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---------- Gradle ----------
+.gradle/
+.kotlin/
+**/build/
+!tools/arti-build/
+out/
+gen/
+
+# ---------- Binary artifacts ----------
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# ---------- ML models & large binaries ----------
+*.task
+*.onnx
+*.tflite
+*.so
+
+# ---------- Keystore / signing ----------
+*.keystore
+*.jks
+debug.keystore
+debug_keystore/
+google-services.json
+app/release/
+
+# ---------- Release APKs ----------
+releases/
+
+# ---------- Mipmap PNGs (vector adaptive icons used instead) ----------
+app/src/main/res/mipmap-hdpi/*.png
+app/src/main/res/mipmap-mdpi/*.png
+app/src/main/res/mipmap-xhdpi/*.png
+app/src/main/res/mipmap-xxhdpi/*.png
+app/src/main/res/mipmap-xxxhdpi/*.png
+
+# ---------- Branding images (repo uses SVG) ----------
+assets/meshlink_logo.png
+
+# ---------- Logs & crash dumps ----------
+*.log
+replay_*.log
+hs_err_*.log
+
+# ---------- Node.js ----------
+node_modules/
+package-lock.json
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# ---------- Docker ----------
+docker-compose.override.yml
+
+# ---------- Rust build (Arti) ----------
+tools/arti-build/.arti-source/
+tools/arti-build/target/
+
+# ---------- macOS ----------
+.DS_Store
+
+# ---------- Editor swap / temp ----------
+*.swp
+*~
+*.lock
+.goosehints
+
+# ---------- Linters ----------
+.lint/
+
+# ---------- Maven (legacy) ----------
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# ---------- Local Android SDK ----------
+.android-sdk/
+
+# ---------- IDE config (optional — remove if you want shared) ----------
+.vscode/

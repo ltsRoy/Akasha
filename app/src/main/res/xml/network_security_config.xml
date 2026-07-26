@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Release policy: no cleartext. Only loopback is exempt, for an adb-forwarded Ground Station.
+
+  A LAN Ground Station on plain HTTP is therefore unreachable in a release build by design. That is
+  deliberate: the debug overlay in src/debug/res/xml permits cleartext for development, and a real
+  deployment should serve the station over HTTPS rather than relaxing this.
+
+  Note that CIDR ranges cannot be expressed here — <domain> accepts hostnames and IP literals only,
+  so "permit the whole private range" is not something this file can express.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

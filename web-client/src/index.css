@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-red-500: #ef4444;
+  --color-green-500: #22c55e;
+}
+
+body {
+  @apply bg-black text-gray-200 antialiased;
+}

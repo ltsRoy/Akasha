@@ -1,0 +1,90 @@
+[
+  {
+    "id": "helpline:in:all_emergency",
+    "service": "all_emergency",
+    "name": "National Emergency Number",
+    "number": "112",
+    "scope": "India",
+    "notes": "Single number for police, fire and ambulance.",
+    "data_status": "verified",
+    "source_doc": "Government of India unified emergency number",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:police",
+    "service": "police",
+    "name": "Police",
+    "number": "100",
+    "scope": "India",
+    "notes": null,
+    "data_status": "verified",
+    "source_doc": "Government of India emergency numbers",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:fire",
+    "service": "fire",
+    "name": "Fire and Rescue",
+    "number": "101",
+    "scope": "India",
+    "notes": null,
+    "data_status": "verified",
+    "source_doc": "Government of India emergency numbers",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:ambulance",
+    "service": "ambulance",
+    "name": "Ambulance",
+    "number": "102",
+    "scope": "India",
+    "notes": null,
+    "data_status": "verified",
+    "source_doc": "Government of India emergency numbers",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:medical",
+    "service": "medical",
+    "name": "Emergency Medical Services",
+    "number": "108",
+    "scope": "India",
+    "notes": "Integrated emergency medical response in most states.",
+    "data_status": "verified",
+    "source_doc": "Government of India emergency numbers",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:disaster",
+    "service": "disaster",
+    "name": "State Disaster Management Helpline",
+    "number": "1070",
+    "scope": "State",
+    "notes": "State-level disaster management control room.",
+    "data_status": "verified",
+    "source_doc": "National Disaster Management Authority helpline list",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:child",
+    "service": "child",
+    "name": "Childline",
+    "number": "1098",
+    "scope": "India",
+    "notes": "Children in distress.",
+    "data_status": "verified",
+    "source_doc": "Government of India emergency numbers",
+    "pack_version": "kolkata-1.0.0"
+  },
+  {
+    "id": "helpline:in:women",
+    "service": "women",
+    "name": "Women's Helpline",
+    "number": "1091",
+    "scope": "India",
+    "notes": null,
+    "data_status": "verified",
+    "source_doc": "Government of India emergency numbers",
+    "pack_version": "kolkata-1.0.0"
+  }
+]

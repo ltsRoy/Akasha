@@ -1,0 +1,33 @@
+{
+  "_comment": "Deterministic slot resolution for the on-device LLM. Lay wording -> closed-vocabulary value. Kept as data, not left to the model, so the same phrasing always maps to the same filter. Includes Bengali/Hinglish transliterations because Kolkata users mix languages.",
+  "specialty": {
+    "orthopaedic": ["bone", "bones", "broken bone", "fracture", "fractured", "orthopedic", "joint", "dislocated", "haddi", "haar", "hath tuta", "pa bhenge"],
+    "trauma": ["accident", "road accident", "casualty", "emergency", "crush injury", "multiple injuries", "durghatana"],
+    "burns": ["burn", "burnt", "scald", "scalded", "fire injury", "boiling water", "pora", "jhulse"],
+    "cardiac": ["heart", "heart attack", "chest pain", "cardiology", "cardiac arrest", "buke betha"],
+    "neuro": ["head injury", "stroke", "brain", "seizure", "fits", "unconscious", "matha"],
+    "paediatric": ["child", "children", "kid", "kids", "baby", "infant", "newborn", "shishu", "bachcha"],
+    "maternity": ["pregnant", "pregnancy", "delivery", "labour", "labor", "obstetric", "childbirth", "prasab"],
+    "general_surgery": ["surgery", "operation", "surgical"],
+    "general_medicine": ["fever", "general", "physician", "medicine", "jor"],
+    "dialysis": ["kidney", "renal", "dialysis"],
+    "poison_control": ["poison", "poisoning", "overdose", "swallowed chemical", "drank chemical", "pesticide", "bish"],
+    "snake_antivenom": ["snake bite", "snakebite", "antivenom", "anti venom", "saap", "shap"],
+    "psychiatric": ["mental", "psychiatric", "suicidal", "panic"],
+    "ophthalmology": ["eye", "eyes", "vision", "chokh"],
+    "icu": ["icu", "intensive care", "critical", "ventilator"],
+    "blood_transfusion": ["transfusion", "blood needed", "blood required"]
+  },
+  "category": {
+    "hospital": ["hospital", "medical college", "nursing home", "emergency room", "casualty", "haspatal"],
+    "clinic": ["clinic", "health centre", "health center", "dispensary", "phc"],
+    "blood_bank": ["blood bank", "blood donation", "need blood"],
+    "pharmacy": ["pharmacy", "chemist", "medicine shop", "drug store", "dokan"],
+    "police": ["police", "police station", "thana", "cops"],
+    "fire_station": ["fire", "fire brigade", "fire station", "dumdum fire"],
+    "shelter": ["shelter", "camp", "relief camp", "cyclone shelter", "flood shelter", "safe place", "ashroy"],
+    "rescue_centre": ["rescue", "ndrf", "sdrf", "civil defence", "disaster team"],
+    "relief_distribution": ["food", "water", "relief", "ration", "supplies", "distribution"],
+    "helpline": ["helpline", "phone number", "who to call", "emergency number"]
+  }
+}

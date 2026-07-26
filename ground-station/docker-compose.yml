@@ -1,0 +1,44 @@
+services:
+  actian:
+    image: actian/vectorai:latest
+    container_name: vectorai
+    ports:
+      - "6573-6575:6573-6575"
+    environment:
+      - ACTIAN_VECTORAI_ACCEPT_EULA=YES
+    volumes:
+      - ./local_data:/var/lib/actian-vectorai
+    restart: unless-stopped
+    healthcheck:
+      # The REST collections endpoint is the first thing to come up once the vector
+      # engine has loaded its segments from ./local_data.
+      test: ["CMD-SHELL", "curl -fsS http://localhost:6573/collections || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  api:
+    build: .
+    container_name: akasha-api
+    ports:
+      - "8000:8000"
+    depends_on:
+      actian:
+        # Without this the API races Actian on a cold start: the collection appears in
+        # /collections before its points are queryable, which used to crash startup.
+        condition: service_healthy
+    environment:
+      # Service-name DNS inside the compose network. Actian's REST port is 6573;
+      # it is probed first, with the others kept as fallbacks.
+      - ACTIAN_HOST=actian
+      - ACTIAN_PORTS=6573,6574,50051
+      - COLLECTION_NAME=akasha_safety
+      - VECTOR_DIM=384
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import httpx,sys; sys.exit(0 if httpx.get('http://localhost:8000/health',timeout=5).json().get('ok') else 1)\""]
+      interval: 10s
+      timeout: 8s
+      retries: 12
+      start_period: 30s

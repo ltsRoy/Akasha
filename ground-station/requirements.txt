@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pydantic>=2.0
+httpx
+sentence-transformers
+numpy
+pytest

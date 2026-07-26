@@ -1,0 +1,226 @@
+[
+  {
+    "text": "For an unresponsive adult not breathing normally, call emergency services immediately and start CPR. Place hands in the center of the chest and push hard and fast at 100 to 120 beats per minute. Allow the chest to recoil completely between compressions and minimize interruptions.",
+    "source_doc": "WHO Emergency Care Manual 2023",
+    "pack_version": "1.1.0",
+    "category": "cpr",
+    "lang": "en"
+  },
+  {
+    "text": "If an adult collapses, is unconscious, and has no pulse or normal breathing, begin chest compressions without delay. Give 30 compressions at least 2 inches deep, then 2 rescue breaths, and repeat until help arrives or the person revives.",
+    "source_doc": "AHA CPR Guidelines 2020",
+    "pack_version": "1.1.0",
+    "category": "cpr",
+    "lang": "en"
+  },
+  {
+    "text": "For child CPR, use one or two hands to push down on the center of the chest about 2 inches deep. Give 30 compressions followed by 2 rescue breaths. For infants use two fingers and compress about 1.5 inches.",
+    "source_doc": "AHA CPR Guidelines 2020",
+    "pack_version": "1.1.0",
+    "category": "cpr",
+    "lang": "en"
+  },
+  {
+    "text": "Apply direct, firm pressure to the wound using a clean cloth or sterile gauze to control severe bleeding. If bleeding continues through the bandage, apply a second layer without removing the first and maintain pressure. If life-threatening extremity bleeding persists, apply a tourniquet 2 to 3 inches above the wound.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "bleeding",
+    "lang": "en"
+  },
+  {
+    "text": "Heavy blood loss from an arm or leg is life threatening. Press hard on the wound, raise the limb above the level of the heart if you can, and keep pressing until emergency responders take over. Do not remove a soaked dressing, add more on top.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "bleeding",
+    "lang": "en"
+  },
+  {
+    "text": "If a person is choking and cannot speak, breathe, or cough forcefully, perform abdominal thrusts immediately. Stand behind the victim, wrap arms around their waist, and make a fist just above the navel. Grasp the fist with your other hand and deliver quick, upward thrusts until the airway blockage is dislodged.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "choking",
+    "lang": "en"
+  },
+  {
+    "text": "Someone with food or an object stuck in their throat who cannot cough or make sound needs the Heimlich maneuver at once. Give firm inward and upward thrusts below the ribcage. If they become unconscious, lower them to the floor and begin CPR.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "choking",
+    "lang": "en"
+  },
+  {
+    "text": "Do not attempt to straighten or move an injured limb if a fracture is suspected. Immobilize the injury above and below the fracture site using a rigid splint and padding to prevent further damage. Apply ice packs wrapped in cloth to reduce swelling and seek immediate professional medical evaluation.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "fracture",
+    "lang": "en"
+  },
+  {
+    "text": "A limb that is bent at an odd angle, badly swollen, or cannot bear weight may be broken. Support it in the position found, pad around it with rolled clothing or magazines, and secure without cutting off circulation. Check fingers or toes stay warm and pink.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "fracture",
+    "lang": "en"
+  },
+  {
+    "text": "Immediately cool thermal burns by running cool, clean tap water over the burn site for at least 20 minutes. Remove loose clothing and jewelry from the burned area, but never peel off clothing stuck to the skin. Cover the burn loosely with a sterile, non-stick dressing or clean wrap, and avoid applying ice, butter, or ointments.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "burns",
+    "lang": "en"
+  },
+  {
+    "text": "If your clothes catch on fire, stop where you are, drop to the ground, cover your face with your hands, and roll over and over to smother the flames.",
+    "source_doc": "NFPA Fire Safety Guide",
+    "pack_version": "1.1.0",
+    "category": "fire",
+    "lang": "en"
+  },
+  {
+    "text": "If a fire alarm sounds in your building, evacuate immediately using the nearest stairwell; never use elevators during a fire emergency. Stay low to the floor to avoid inhaling toxic smoke and check doors for heat before opening. If trapped, seal door cracks with wet towels, signal from a window, and call emergency services.",
+    "source_doc": "NFPA Fire Safety Guide",
+    "pack_version": "1.1.0",
+    "category": "fire",
+    "lang": "en"
+  },
+  {
+    "text": "During an earthquake, immediately Drop, Cover, and Hold On under a sturdy table or desk. Stay away from windows, heavy furniture, and exterior walls that could shatter or collapse during tremors. If outdoors, move to an open area away from buildings, streetlights, and utility wires until shaking stops.",
+    "source_doc": "FEMA Disaster Preparedness Guide",
+    "pack_version": "1.1.0",
+    "category": "earthquake",
+    "lang": "en"
+  },
+  {
+    "text": "When the ground starts shaking violently, get under a strong table, protect your head and neck, and hold on until the movement stops. Do not run outside during the shaking. Expect aftershocks and check yourself and others for injuries afterwards.",
+    "source_doc": "FEMA Earthquake Safety",
+    "pack_version": "1.1.0",
+    "category": "earthquake",
+    "lang": "en"
+  },
+  {
+    "text": "Move immediately to higher ground if flash flooding is issued or floodwaters begin rising around your location. Never walk, swim, or drive through moving floodwaters, as just six inches of fast-flowing water can knock a person down. Avoid downed electrical power lines and standing water that may be contaminated or electrically charged.",
+    "source_doc": "FEMA Disaster Preparedness Guide",
+    "pack_version": "1.1.0",
+    "category": "flood",
+    "lang": "en"
+  },
+  {
+    "text": "If water is rising fast in the street, abandon your vehicle and climb to higher ground on foot. Turn Around, Don't Drown. Two feet of moving water will float most cars and just six inches will sweep an adult off their feet.",
+    "source_doc": "NWS Flood Safety",
+    "pack_version": "1.1.0",
+    "category": "flood",
+    "lang": "en"
+  },
+  {
+    "text": "In the event of a hazardous chemical spill or toxic gas release, evacuate upwind and uphill from the contamination source immediately. If exposed to hazardous substances, strip off contaminated clothing and flush skin or eyes with copious amounts of clean water for at least 15 minutes. Seek emergency medical treatment immediately and report the specific chemical name if known.",
+    "source_doc": "CDC Hazmat Emergency Guidelines",
+    "pack_version": "1.1.0",
+    "category": "hazmat",
+    "lang": "en"
+  },
+  {
+    "text": "For an outdoor chemical spill, stay upstream, uphill, and upwind of the release. Maintain an evacuation distance of at least 330 feet, roughly 100 meters, and keep bystanders away until trained responders arrive.",
+    "source_doc": "ERG 2020",
+    "pack_version": "1.1.0",
+    "category": "hazmat",
+    "lang": "en"
+  },
+  {
+    "text": "Heat stroke is a critical emergency indicated by high body temperature, confusion, or loss of consciousness. Move the victim immediately to a cool, shaded area and call for emergency medical help. Rapidly cool the body by immersing in cool water, applying ice packs to the neck, armpits, and groin, or misting with cool water and fanning.",
+    "source_doc": "WHO Emergency Care Manual 2023",
+    "pack_version": "1.1.0",
+    "category": "heat",
+    "lang": "en"
+  },
+  {
+    "text": "Heat exhaustion signs include heavy sweating, weakness, and a rapid pulse. Move the person to a cooler place, loosen their clothing, and give cool water to sip. If symptoms worsen or they vomit, get medical help.",
+    "source_doc": "CDC Extreme Heat Guide",
+    "pack_version": "1.1.0",
+    "category": "heat",
+    "lang": "en"
+  },
+  {
+    "text": "Move the hypothermic victim to a warm, shelter environment and gently remove any wet clothing immediately. Warm the person gradually using dry blankets, insulating layers, and body-to-body heat transfer, focusing on the chest, neck, and groin. Provide warm, sweet non-alcoholic drinks only if the victim is fully conscious and able to swallow safely.",
+    "source_doc": "Wilderness Medical Society Guidelines",
+    "pack_version": "1.1.0",
+    "category": "hypothermia",
+    "lang": "en"
+  },
+  {
+    "text": "If a toxic substance has been swallowed, inhaled, or absorbed, call the local poison control center or emergency services immediately. Do not induce vomiting or administer fluids unless explicitly instructed to do so by a poison control professional or physician. Ensure the victim is breathing adequately and bring the substance container or label to the hospital.",
+    "source_doc": "WHO Emergency Care Manual 2023",
+    "pack_version": "1.1.0",
+    "category": "poisoning",
+    "lang": "en"
+  },
+  {
+    "text": "Someone who has swallowed poison, pills, cleaning fluid, or another harmful substance needs poison control or emergency services right away. Never make them vomit unless a professional tells you to. Keep the container so responders can identify what was ingested.",
+    "source_doc": "WHO Emergency Care Manual 2023",
+    "pack_version": "1.1.0",
+    "category": "poisoning",
+    "lang": "en"
+  },
+  {
+    "text": "Use the FAST acronym to identify a stroke: check for Face drooping, Arm weakness, and Slurred speech; Time to call emergency services is critical. Note the exact time when symptoms first appeared, as this determines eligibility for life-saving clot-dissolving medications. Keep the victim calm and comfortably lying down with head slightly elevated, and never give them food or drink.",
+    "source_doc": "AHA Stroke Guidelines",
+    "pack_version": "1.1.0",
+    "category": "stroke",
+    "lang": "en"
+  },
+  {
+    "text": "A drooping face on one side, a weak or numb arm, and slurred or confused speech are warning signs of a stroke. Call emergency services immediately and record the time symptoms began. Do not give the person anything to eat or drink.",
+    "source_doc": "AHA Stroke Guidelines",
+    "pack_version": "1.1.0",
+    "category": "stroke",
+    "lang": "en"
+  },
+  {
+    "text": "During a seizure, gently guide the person to the floor and clear the surrounding area of sharp or hard objects to prevent physical injury. Place a soft pillow or folded jacket under their head and turn them gently onto their side to keep the airway clear of fluids. Never restrain the person's movements or place anything in their mouth; time the seizure and call emergency services if it lasts over five minutes.",
+    "source_doc": "Epilepsy Foundation First Aid",
+    "pack_version": "1.1.0",
+    "category": "seizure",
+    "lang": "en"
+  },
+  {
+    "text": "If a person suddenly falls down and their whole body starts shaking or jerking uncontrollably, they are having a convulsion or epileptic fit. Do not hold them down or force anything between their teeth. Cushion their head, move furniture away, roll them onto their side when the jerking stops, and time how long the episode lasts.",
+    "source_doc": "Epilepsy Foundation First Aid",
+    "pack_version": "1.1.0",
+    "category": "seizure",
+    "lang": "en"
+  },
+  {
+    "text": "Someone who has been exposed to cold for a long time may shiver violently, feel freezing to the touch, become drowsy, or stop making sense. This is hypothermia. Get them indoors, replace wet clothes with dry ones, wrap them in blankets, and warm them slowly rather than with direct heat.",
+    "source_doc": "Wilderness Medical Society Guidelines",
+    "pack_version": "1.1.0",
+    "category": "hypothermia",
+    "lang": "en"
+  },
+  {
+    "text": "Keep the snake bite victim calm and completely still to slow the spread of venom through the lymphatic system. Remove rings, watches, and restrictive clothing before localized swelling begins, and keep the bitten extremity below heart level. Never cut the wound, attempt to suck out venom, or apply ice or a tourniquet; seek immediate hospital antivenom therapy.",
+    "source_doc": "WHO Snakebite Envenoming Guide",
+    "pack_version": "1.1.0",
+    "category": "snakebite",
+    "lang": "en"
+  },
+  {
+    "text": "After a bite from a snake, spider, or wild animal, wash the area with soap and water and keep the limb still and below heart level. Do not cut the wound or try to suck out venom. Get to a hospital for antivenom or rabies assessment without delay.",
+    "source_doc": "WHO Snakebite Envenoming Guide",
+    "pack_version": "1.1.0",
+    "category": "snakebite",
+    "lang": "en"
+  },
+  {
+    "text": "Remove the drowning victim from the water as quickly and safely as possible without endangering the rescuer. Check immediately for breathing and pulse; if absent, initiate CPR starting with two rescue breaths followed by 30 chest compressions. Continue resuscitation without interruption until emergency medical personnel arrive or the victim resumes spontaneous breathing.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "drowning",
+    "lang": "en"
+  },
+  {
+    "text": "If someone has been pulled from water and is not breathing, start rescue breaths and chest compressions immediately. Clear the mouth of debris, keep the airway open, and do not stop until they breathe on their own or responders take over.",
+    "source_doc": "Red Cross First Aid Guide",
+    "pack_version": "1.1.0",
+    "category": "drowning",
+    "lang": "en"
+  }
+]
